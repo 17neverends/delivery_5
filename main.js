@@ -231,4 +231,12 @@ function handleMobileInput(event) {
   }
 }
 
+function scrollToTop() {
+  window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+  });
+}
+
+
 window .TelegramWebviewProxy .postEvent('web_app_setup_closing_behavior', JSON.stringify({ need_confirmation: true }));
